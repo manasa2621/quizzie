@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const Quiz = require('../models/quiz');
 
-// Route to display a quiz based on a parameter
 router.get("/:quizId", async (req, res) => {
   try {
     const quizId = req.params.quizId;
